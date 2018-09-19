@@ -46,7 +46,7 @@ module mile_integral(
     // enumlate the meter
     always @ (posedge clk or posedge rst)
         begin
-            if(rst) begin miles_dec <= 0; miles_m <=0; miles_km <= 0; end
+            if(rst) begin miles_dec <= 0; miles_m <=0; miles_km <= 0; miles_hm <= 0;end
             else if(miles_dec >= meter_raw_ratio)
                     begin
                         

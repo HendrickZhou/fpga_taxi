@@ -14,14 +14,14 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 23140 
+INFO: Helper process launched with PID 16912 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 320.434 ; gain = 80.941
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 319.848 ; gain = 80.551
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'taxi_top' [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/new/taxi_top.v:23]
 INFO: [Synth 8-638] synthesizing module 'speed_collector' [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/new/speed_collector.v:23]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.runs/synth_1/.Xil/Vivado-22960-LAPTOP-JAN9HU1P/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.runs/synth_1/.Xil/Vivado-22960-LAPTOP-JAN9HU1P/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.runs/synth_1/.Xil/Vivado-9328-LAPTOP-JAN9HU1P/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.runs/synth_1/.Xil/Vivado-9328-LAPTOP-JAN9HU1P/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-638] synthesizing module 'ug480' [C:/Users/cooper/Desktop/fpga/ug480_7Series_XADC/XADC_lab/lab_xadc.srcs/sources_1/imports/file_xadc/ug480.v:4]
 	Parameter init_read bound to: 8'b00000000 
 	Parameter read_waitdrdy bound to: 8'b00000001 
@@ -80,7 +80,6 @@ INFO: [Synth 8-256] done synthesizing module 'ug480' (4#1) [C:/Users/cooper/Desk
 INFO: [Synth 8-256] done synthesizing module 'speed_collector' (5#1) [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/new/speed_collector.v:23]
 INFO: [Synth 8-638] synthesizing module 'mile_integral' [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/new/mile_integral.v:23]
 	Parameter meter_raw_ratio bound to: 500000000 - type: integer 
-WARNING: [Synth 8-5788] Register miles_hm_reg in module mile_integral is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/new/mile_integral.v:58]
 INFO: [Synth 8-256] done synthesizing module 'mile_integral' (6#1) [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/new/mile_integral.v:23]
 INFO: [Synth 8-638] synthesizing module 'fare' [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/new/fare.v:23]
 	Parameter base_fee bound to: 15 - type: integer 
@@ -192,7 +191,7 @@ WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX3[2]
 WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX3[1]
 WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX3[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 370.613 ; gain = 131.121
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 369.922 ; gain = 130.625
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -204,7 +203,7 @@ Report Check Netlist:
 WARNING: [Synth 8-3295] tying undriven pin u_xadc:VP to constant 0 [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/new/speed_collector.v:43]
 WARNING: [Synth 8-3295] tying undriven pin u_xadc:VN to constant 0 [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/new/speed_collector.v:43]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 370.613 ; gain = 131.121
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 369.922 ; gain = 130.625
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -213,8 +212,8 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.runs/synth_1/.Xil/Vivado-22960-LAPTOP-JAN9HU1P/dcp3/clk_wiz_0_in_context.xdc] for cell 'sc/u_clk'
-Finished Parsing XDC File [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.runs/synth_1/.Xil/Vivado-22960-LAPTOP-JAN9HU1P/dcp3/clk_wiz_0_in_context.xdc] for cell 'sc/u_clk'
+Parsing XDC File [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.runs/synth_1/.Xil/Vivado-9328-LAPTOP-JAN9HU1P/dcp3/clk_wiz_0_in_context.xdc] for cell 'sc/u_clk'
+Finished Parsing XDC File [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.runs/synth_1/.Xil/Vivado-9328-LAPTOP-JAN9HU1P/dcp3/clk_wiz_0_in_context.xdc] for cell 'sc/u_clk'
 Parsing XDC File [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/constrs_1/new/taxi_top.xdc]
 Finished Parsing XDC File [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/constrs_1/new/taxi_top.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/constrs_1/new/taxi_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/taxi_top_propImpl.xdc].
@@ -224,25 +223,25 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 693.777 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 693.340 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 693.777 ; gain = 454.285
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 693.340 ; gain = 454.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 693.777 ; gain = 454.285
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 693.340 ; gain = 454.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk100. (constraint file  D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.runs/synth_1/.Xil/Vivado-22960-LAPTOP-JAN9HU1P/dcp3/clk_wiz_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk100. (constraint file  D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.runs/synth_1/.Xil/Vivado-22960-LAPTOP-JAN9HU1P/dcp3/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for clk100. (constraint file  D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.runs/synth_1/.Xil/Vivado-9328-LAPTOP-JAN9HU1P/dcp3/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk100. (constraint file  D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.runs/synth_1/.Xil/Vivado-9328-LAPTOP-JAN9HU1P/dcp3/clk_wiz_0_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for sc/u_clk. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 693.777 ; gain = 454.285
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 693.340 ; gain = 454.043
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ug480'
 WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/cooper/Desktop/fpga/ug480_7Series_XADC/XADC_lab/lab_xadc.srcs/sources_1/imports/file_xadc/ug480.v:55]
@@ -273,7 +272,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'digs_m_reg' [D:/Respository
 WARNING: [Synth 8-327] inferring latch for variable 'digs_f_reg' [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/new/display.v:147]
 WARNING: [Synth 8-327] inferring latch for variable 'dp_reg' [D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/new/display.v:90]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 693.777 ; gain = 454.285
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 693.340 ; gain = 454.043
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -405,7 +404,7 @@ WARNING: [Synth 8-3332] Sequential element (sc/u_xadc/MEASURED_AUX1_reg[2]) is u
 WARNING: [Synth 8-3332] Sequential element (sc/u_xadc/MEASURED_AUX1_reg[1]) is unused and will be removed from module taxi_top.
 WARNING: [Synth 8-3332] Sequential element (sc/u_xadc/MEASURED_AUX1_reg[0]) is unused and will be removed from module taxi_top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 693.777 ; gain = 454.285
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 693.340 ; gain = 454.043
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -436,13 +435,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'sc/u_clk/clk_out1' to pin 'sc/u_clk/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 741.816 ; gain = 502.324
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 745.395 ; gain = 506.098
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 796.805 ; gain = 557.313
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 801.516 ; gain = 562.219
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -454,7 +453,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 797.813 ; gain = 558.320
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 802.527 ; gain = 563.230
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -478,7 +477,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 797.813 ; gain = 558.320
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 802.527 ; gain = 563.230
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -491,7 +490,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 797.813 ; gain = 558.320
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 802.527 ; gain = 563.230
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -503,25 +502,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 797.813 ; gain = 558.320
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 802.527 ; gain = 563.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 797.813 ; gain = 558.320
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 802.527 ; gain = 563.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 797.813 ; gain = 558.320
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 802.527 ; gain = 563.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 797.813 ; gain = 558.320
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 802.527 ; gain = 563.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -543,37 +542,38 @@ Report Cell Usage:
 |3     |CARRY4    |    67|
 |4     |DSP48E1   |     1|
 |5     |DSP48E1_1 |     2|
-|6     |LUT1      |    68|
-|7     |LUT2      |   113|
-|8     |LUT3      |    51|
-|9     |LUT4      |    52|
-|10    |LUT5      |    53|
-|11    |LUT6      |   100|
-|12    |XADC      |     1|
-|13    |FDCE      |    79|
-|14    |FDRE      |    35|
-|15    |LD        |    16|
-|16    |IBUF      |     3|
-|17    |OBUF      |    24|
+|6     |LUT1      |    67|
+|7     |LUT2      |   112|
+|8     |LUT3      |    46|
+|9     |LUT4      |    57|
+|10    |LUT5      |    55|
+|11    |LUT6      |    97|
+|12    |MUXF7     |     1|
+|13    |XADC      |     1|
+|14    |FDCE      |    83|
+|15    |FDRE      |    31|
+|16    |LD        |    16|
+|17    |IBUF      |     3|
+|18    |OBUF      |    24|
 +------+----------+------+
 
 Report Instance Areas: 
 +------+-----------+----------------+------+
 |      |Instance   |Module          |Cells |
 +------+-----------+----------------+------+
-|1     |top        |                |   667|
+|1     |top        |                |   665|
 |2     |  dis      |display         |   153|
-|3     |  f        |fare            |    74|
+|3     |  f        |fare            |    72|
 |4     |  mi       |mile_integral   |   266|
 |5     |  sc       |speed_collector |   146|
 |6     |    u_xadc |ug480           |    60|
 +------+-----------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 797.813 ; gain = 558.320
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 802.527 ; gain = 563.230
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 19 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 797.813 ; gain = 235.156
-Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 797.813 ; gain = 558.320
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 802.527 ; gain = 239.813
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 802.527 ; gain = 563.230
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 90 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -585,9 +585,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LD => LDCE: 7 instances
   LD => LDCE (inverted pins: G): 9 instances
 
-51 Infos, 126 Warnings, 0 Critical Warnings and 0 Errors encountered.
+51 Infos, 125 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 797.813 ; gain = 564.434
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 802.527 ; gain = 569.496
 INFO: [Common 17-1381] The checkpoint 'D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.runs/synth_1/taxi_top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 797.813 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Sep 19 11:57:09 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 802.527 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 19 12:10:08 2018...
