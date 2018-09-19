@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Wed Sep 19 09:46:57 2018
+| Date         : Wed Sep 19 11:12:25 2018
 | Host         : LAPTOP-JAN9HU1P running 64-bit major release  (build 9200)
 | Command      : report_utilization -file taxi_top_utilization_synth.rpt -pb taxi_top_utilization_synth.pb
 | Design       : taxi_top
@@ -147,13 +147,13 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT2     |  126 |                 LUT |
-| LUT6     |  101 |                 LUT |
+| LUT2     |  125 |                 LUT |
+| LUT6     |   99 |                 LUT |
 | FDCE     |   79 |        Flop & Latch |
-| LUT1     |   66 |                 LUT |
+| LUT1     |   68 |                 LUT |
 | CARRY4   |   65 |          CarryLogic |
-| LUT5     |   46 |                 LUT |
-| LUT3     |   46 |                 LUT |
+| LUT5     |   47 |                 LUT |
+| LUT3     |   45 |                 LUT |
 | FDRE     |   35 |        Flop & Latch |
 | LUT4     |   32 |                 LUT |
 | OBUF     |   24 |                  IO |

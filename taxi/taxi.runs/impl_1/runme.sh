@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/vivado_project/taxi/taxi.runs/impl_1'
+HD_PWD='D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

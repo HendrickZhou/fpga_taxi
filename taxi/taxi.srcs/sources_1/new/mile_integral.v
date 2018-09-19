@@ -52,14 +52,14 @@ module mile_integral(
                         
                         miles_dec <= 0;
                         
-                        if(miles_m == 1000)
+                        if(miles_m == 999)
                             begin
                                 // !!!!!!!!!!!! to do : add km top value
                                 miles_km <= miles_km + 1;
                                 miles_m <= 0;
                             end
                         else 
-                            if(miles_m/100 == 0) 
+                            if(miles_m%100 == 0) 
                             begin
                                     if(miles_hm == 9)
                                         miles_hm <= 0;
@@ -69,6 +69,8 @@ module mile_integral(
                             end
                             else 
                                 miles_m <= miles_m + 1;
+                                
+                        miles_dec <= miles_dec + speed;
                     end
                 else
                     begin

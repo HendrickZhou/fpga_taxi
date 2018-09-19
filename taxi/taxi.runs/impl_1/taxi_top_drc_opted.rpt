@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Wed Sep 19 09:47:37 2018
+| Date         : Wed Sep 19 11:14:19 2018
 | Host         : LAPTOP-JAN9HU1P running 64-bit major release  (build 9200)
 | Command      : report_drc -file taxi_top_drc_opted.rpt
 | Design       : taxi_top

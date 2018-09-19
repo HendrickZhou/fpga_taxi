@@ -9,26 +9,26 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/vivado_project/taxi/taxi.cache/wt [current_project]
-set_property parent.project_path D:/vivado_project/taxi/taxi.xpr [current_project]
+set_property webtalk.parent_dir D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.cache/wt [current_project]
+set_property parent.project_path D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo d:/vivado_project/taxi/taxi.cache/ip [current_project]
+set_property ip_output_repo d:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  D:/vivado_project/taxi/taxi.srcs/sources_1/new/display.v
-  D:/vivado_project/taxi/taxi.srcs/sources_1/new/fare.v
-  D:/vivado_project/taxi/taxi.srcs/sources_1/new/mile_integral.v
-  D:/vivado_project/taxi/taxi.srcs/sources_1/new/speed_collector.v
+  D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/new/display.v
+  D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/new/fare.v
+  D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/new/mile_integral.v
+  D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/new/speed_collector.v
   C:/Users/cooper/Desktop/fpga/ug480_7Series_XADC/XADC_lab/lab_xadc.srcs/sources_1/imports/file_xadc/ug480.v
-  D:/vivado_project/taxi/taxi.srcs/sources_1/new/taxi_top.v
+  D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/new/taxi_top.v
 }
-read_ip -quiet D:/vivado_project/taxi/taxi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all d:/vivado_project/taxi/taxi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/vivado_project/taxi/taxi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all d:/vivado_project/taxi/taxi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
-set_property is_locked true [get_files D:/vivado_project/taxi/taxi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+read_ip -quiet D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all d:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+set_property is_locked true [get_files D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -38,8 +38,8 @@ set_property is_locked true [get_files D:/vivado_project/taxi/taxi.srcs/sources_
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/vivado_project/taxi/taxi.srcs/constrs_1/new/taxi_top.xdc
-set_property used_in_implementation false [get_files D:/vivado_project/taxi/taxi.srcs/constrs_1/new/taxi_top.xdc]
+read_xdc D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/constrs_1/new/taxi_top.xdc
+set_property used_in_implementation false [get_files D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.srcs/constrs_1/new/taxi_top.xdc]
 
 
 synth_design -top taxi_top -part xc7a35tcsg324-1

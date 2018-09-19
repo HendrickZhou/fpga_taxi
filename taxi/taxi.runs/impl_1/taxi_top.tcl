@@ -49,7 +49,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param xicom.use_bs_reader 1
   open_checkpoint taxi_top_routed.dcp
-  set_property webtalk.parent_dir D:/vivado_project/taxi/taxi.cache/wt [current_project]
+  set_property webtalk.parent_dir D:/Respository/fpga_taxi/fpga_taxi/taxi/taxi.cache/wt [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
   catch { write_mem_info -force taxi_top.mmi }
   write_bitstream -force taxi_top.bit 
