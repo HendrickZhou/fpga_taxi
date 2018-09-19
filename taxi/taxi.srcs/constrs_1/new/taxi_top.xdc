@@ -1,0 +1,33 @@
+set_property -dict {PACKAGE_PIN P17 IOSTANDARD LVCMOS33} [get_ports clk100 ]
+set_property -dict {PACKAGE_PIN P15 IOSTANDARD LVCMOS33} [get_ports RESET  ]
+
+set_property -dict {PACKAGE_PIN B12 IOSTANDARD LVCMOS33} [get_ports A_VAUXN  ]
+set_property -dict {PACKAGE_PIN C12 IOSTANDARD LVCMOS33} [get_ports A_VAUXP  ]
+
+set_property -dict {PACKAGE_PIN G2 IOSTANDARD LVCMOS33} [get_ports {sel[7]}]
+set_property -dict {PACKAGE_PIN C2 IOSTANDARD LVCMOS33} [get_ports {sel[6]}]
+set_property -dict {PACKAGE_PIN C1 IOSTANDARD LVCMOS33} [get_ports {sel[5]}]
+set_property -dict {PACKAGE_PIN H1 IOSTANDARD LVCMOS33} [get_ports {sel[4]}]
+set_property -dict {PACKAGE_PIN G1 IOSTANDARD LVCMOS33} [get_ports {sel[3]}]
+set_property -dict {PACKAGE_PIN F1 IOSTANDARD LVCMOS33} [get_ports {sel[2]}]
+set_property -dict {PACKAGE_PIN E1 IOSTANDARD LVCMOS33} [get_ports {sel[1]}]
+set_property -dict {PACKAGE_PIN G6 IOSTANDARD LVCMOS33} [get_ports {sel[0]}]
+
+set_property -dict {PACKAGE_PIN B4 IOSTANDARD LVCMOS33} [get_ports {digs_m[0]}]
+set_property -dict {PACKAGE_PIN A4 IOSTANDARD LVCMOS33} [get_ports {digs_m[1]}]
+set_property -dict {PACKAGE_PIN A3 IOSTANDARD LVCMOS33} [get_ports {digs_m[2]}]
+set_property -dict {PACKAGE_PIN B1 IOSTANDARD LVCMOS33} [get_ports {digs_m[3]}]
+set_property -dict {PACKAGE_PIN A1 IOSTANDARD LVCMOS33} [get_ports {digs_m[4]}]
+set_property -dict {PACKAGE_PIN B3 IOSTANDARD LVCMOS33} [get_ports {digs_m[5]}]
+set_property -dict {PACKAGE_PIN B2 IOSTANDARD LVCMOS33} [get_ports {digs_m[6]}]
+set_property -dict {PACKAGE_PIN D5 IOSTANDARD LVCMOS33} [get_ports {digs_m[7]}]
+
+set_property -dict {PACKAGE_PIN D4 IOSTANDARD LVCMOS33} [get_ports {digs_f[0]}]
+set_property -dict {PACKAGE_PIN E3 IOSTANDARD LVCMOS33} [get_ports {digs_f[1]}]
+set_property -dict {PACKAGE_PIN D3 IOSTANDARD LVCMOS33} [get_ports {digs_f[2]}]
+set_property -dict {PACKAGE_PIN F4 IOSTANDARD LVCMOS33} [get_ports {digs_f[3]}]
+set_property -dict {PACKAGE_PIN F3 IOSTANDARD LVCMOS33} [get_ports {digs_f[4]}]
+set_property -dict {PACKAGE_PIN E2 IOSTANDARD LVCMOS33} [get_ports {digs_f[5]}]
+set_property -dict {PACKAGE_PIN D2 IOSTANDARD LVCMOS33} [get_ports {digs_f[6]}]
+set_property -dict {PACKAGE_PIN H2 IOSTANDARD LVCMOS33} [get_ports {digs_f[7]}]
+

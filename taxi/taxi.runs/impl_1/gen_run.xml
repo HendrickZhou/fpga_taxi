@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1537321565">
+  <File Type="PWROPT-DRC" Name="taxi_top_drc_pwropted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="taxi_top_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="taxi_top_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="taxi_top_power_routed.rpx"/>
+  <File Type="PA-TCL" Name="taxi_top.tcl"/>
+  <File Type="OPT-HWDEF" Name="taxi_top.hwdef"/>
+  <File Type="RDI-RDI" Name="taxi_top.vdi"/>
+  <File Type="OPT-DCP" Name="taxi_top_opt.dcp"/>
+  <File Type="OPT-DRC" Name="taxi_top_drc_opted.rpt"/>
+  <File Type="OPT-TIMING" Name="taxi_top_timing_summary_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="taxi_top_pwropt.dcp"/>
+  <File Type="PWROPT-TIMING" Name="taxi_top_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="taxi_top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="taxi_top_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="taxi_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="taxi_top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="taxi_top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="taxi_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="taxi_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="taxi_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="taxi_top_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="taxi_top_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="taxi_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="taxi_top_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="taxi_top_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="taxi_top_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="taxi_top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="taxi_top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="taxi_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="taxi_top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="taxi_top_drc_routed.pb"/>
+  <File Type="BG-BIN" Name="taxi_top.bin"/>
+  <File Type="ROUTE-DRC-RPX" Name="taxi_top_drc_routed.rpx"/>
+  <File Type="BG-DRC" Name="taxi_top.drc"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="taxi_top_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="taxi_top.msk"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="taxi_top_methodology_drc_routed.rpx"/>
+  <File Type="BG-BGN" Name="taxi_top.bgn"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="taxi_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="taxi_top_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="taxi_top_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="taxi_top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="taxi_top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="taxi_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="taxi_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="taxi_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="taxi_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="taxi_top_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="taxi_top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="taxi_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="taxi_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="taxi_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="taxi_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="taxi_top.bit"/>
+  <File Type="BITSTR-RBT" Name="taxi_top.rbt"/>
+  <File Type="BITSTR-NKY" Name="taxi_top.nky"/>
+  <File Type="BITSTR-BMM" Name="taxi_top_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="taxi_top.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="taxi_top.sysdef"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/display.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fare.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mile_integral.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/speed_collector.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="C:/Users/cooper/Desktop/fpga/ug480_7Series_XADC/XADC_lab/lab_xadc.srcs/sources_1/imports/file_xadc/ug480.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/taxi_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="taxi_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/taxi_top.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+</GenRun>

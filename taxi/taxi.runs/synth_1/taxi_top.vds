@@ -1,0 +1,589 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Wed Sep 19 09:46:10 2018
+# Process ID: 13272
+# Current directory: D:/vivado_project/taxi/taxi.runs/synth_1
+# Command line: vivado.exe -log taxi_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source taxi_top.tcl
+# Log file: D:/vivado_project/taxi/taxi.runs/synth_1/taxi_top.vds
+# Journal file: D:/vivado_project/taxi/taxi.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source taxi_top.tcl -notrace
+Command: synth_design -top taxi_top -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-csg324'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-csg324'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15404 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 319.801 ; gain = 80.816
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'taxi_top' [D:/vivado_project/taxi/taxi.srcs/sources_1/new/taxi_top.v:23]
+INFO: [Synth 8-638] synthesizing module 'speed_collector' [D:/vivado_project/taxi/taxi.srcs/sources_1/new/speed_collector.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [D:/vivado_project/taxi/taxi.runs/synth_1/.Xil/Vivado-13272-LAPTOP-JAN9HU1P/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [D:/vivado_project/taxi/taxi.runs/synth_1/.Xil/Vivado-13272-LAPTOP-JAN9HU1P/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'ug480' [C:/Users/cooper/Desktop/fpga/ug480_7Series_XADC/XADC_lab/lab_xadc.srcs/sources_1/imports/file_xadc/ug480.v:4]
+	Parameter init_read bound to: 8'b00000000 
+	Parameter read_waitdrdy bound to: 8'b00000001 
+	Parameter write_waitdrdy bound to: 8'b00000011 
+	Parameter read_reg00 bound to: 8'b00000100 
+	Parameter reg00_waitdrdy bound to: 8'b00000101 
+	Parameter read_reg11 bound to: 8'b00001110 
+	Parameter reg11_waitdrdy bound to: 8'b00001111 
+INFO: [Synth 8-638] synthesizing module 'BUFG' [D:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (2#1) [D:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'XADC' [D:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:45495]
+	Parameter INIT_40 bound to: 16'b1001000000000000 
+	Parameter INIT_41 bound to: 16'b0010111011110000 
+	Parameter INIT_42 bound to: 16'b0000010000000000 
+	Parameter INIT_43 bound to: 16'b0000000000000000 
+	Parameter INIT_44 bound to: 16'b0000000000000000 
+	Parameter INIT_45 bound to: 16'b0000000000000000 
+	Parameter INIT_46 bound to: 16'b0000000000000000 
+	Parameter INIT_47 bound to: 16'b0000000000000000 
+	Parameter INIT_48 bound to: 16'b0100011100000001 
+	Parameter INIT_49 bound to: 16'b0000000000001111 
+	Parameter INIT_4A bound to: 16'b0000000000000000 
+	Parameter INIT_4B bound to: 16'b0000000000000000 
+	Parameter INIT_4C bound to: 16'b0000000000000000 
+	Parameter INIT_4D bound to: 16'b0000000000000000 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b1011010111101101 
+	Parameter INIT_51 bound to: 16'b0101100110011001 
+	Parameter INIT_52 bound to: 16'b1010000101000111 
+	Parameter INIT_53 bound to: 16'b1101110111011101 
+	Parameter INIT_54 bound to: 16'b1010100100111010 
+	Parameter INIT_55 bound to: 16'b0101000100010001 
+	Parameter INIT_56 bound to: 16'b1001000111101011 
+	Parameter INIT_57 bound to: 16'b1010111001001110 
+	Parameter INIT_58 bound to: 16'b0101100110011001 
+	Parameter INIT_59 bound to: 16'b0000000000000000 
+	Parameter INIT_5A bound to: 16'b0000000000000000 
+	Parameter INIT_5B bound to: 16'b0000000000000000 
+	Parameter INIT_5C bound to: 16'b0000000000000000 
+	Parameter INIT_5D bound to: 16'b0000000000000000 
+	Parameter INIT_5E bound to: 16'b0000000000000000 
+	Parameter INIT_5F bound to: 16'b0000000000000000 
+	Parameter IS_CONVSTCLK_INVERTED bound to: 1'b0 
+	Parameter IS_DCLK_INVERTED bound to: 1'b0 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+	Parameter SIM_MONITOR_FILE bound to: design.txt - type: string 
+INFO: [Synth 8-256] done synthesizing module 'XADC' (3#1) [D:/Xilinx/Vivado/2017.2/scripts/rt/data/unisim_comp.v:45495]
+WARNING: [Synth 8-3848] Net MEASURED_VCCINT in module/entity ug480 does not have driver. [C:/Users/cooper/Desktop/fpga/ug480_7Series_XADC/XADC_lab/lab_xadc.srcs/sources_1/imports/file_xadc/ug480.v:10]
+WARNING: [Synth 8-3848] Net MEASURED_VCCAUX in module/entity ug480 does not have driver. [C:/Users/cooper/Desktop/fpga/ug480_7Series_XADC/XADC_lab/lab_xadc.srcs/sources_1/imports/file_xadc/ug480.v:11]
+WARNING: [Synth 8-3848] Net MEASURED_VCCBRAM in module/entity ug480 does not have driver. [C:/Users/cooper/Desktop/fpga/ug480_7Series_XADC/XADC_lab/lab_xadc.srcs/sources_1/imports/file_xadc/ug480.v:11]
+WARNING: [Synth 8-3848] Net MEASURED_AUX0 in module/entity ug480 does not have driver. [C:/Users/cooper/Desktop/fpga/ug480_7Series_XADC/XADC_lab/lab_xadc.srcs/sources_1/imports/file_xadc/ug480.v:12]
+WARNING: [Synth 8-3848] Net MEASURED_AUX2 in module/entity ug480 does not have driver. [C:/Users/cooper/Desktop/fpga/ug480_7Series_XADC/XADC_lab/lab_xadc.srcs/sources_1/imports/file_xadc/ug480.v:13]
+WARNING: [Synth 8-3848] Net MEASURED_AUX3 in module/entity ug480 does not have driver. [C:/Users/cooper/Desktop/fpga/ug480_7Series_XADC/XADC_lab/lab_xadc.srcs/sources_1/imports/file_xadc/ug480.v:13]
+INFO: [Synth 8-256] done synthesizing module 'ug480' (4#1) [C:/Users/cooper/Desktop/fpga/ug480_7Series_XADC/XADC_lab/lab_xadc.srcs/sources_1/imports/file_xadc/ug480.v:4]
+INFO: [Synth 8-256] done synthesizing module 'speed_collector' (5#1) [D:/vivado_project/taxi/taxi.srcs/sources_1/new/speed_collector.v:23]
+INFO: [Synth 8-638] synthesizing module 'mile_integral' [D:/vivado_project/taxi/taxi.srcs/sources_1/new/mile_integral.v:23]
+	Parameter meter_raw_ratio bound to: 500000000 - type: integer 
+WARNING: [Synth 8-5788] Register miles_hm_reg in module mile_integral is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/vivado_project/taxi/taxi.srcs/sources_1/new/mile_integral.v:64]
+INFO: [Synth 8-256] done synthesizing module 'mile_integral' (6#1) [D:/vivado_project/taxi/taxi.srcs/sources_1/new/mile_integral.v:23]
+INFO: [Synth 8-638] synthesizing module 'fare' [D:/vivado_project/taxi/taxi.srcs/sources_1/new/fare.v:23]
+	Parameter base_fee bound to: 15 - type: integer 
+	Parameter base_miles bound to: 5 - type: integer 
+	Parameter l1_miles bound to: 25 - type: integer 
+	Parameter l0_fee bound to: 2 - type: integer 
+	Parameter l1_fee bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fare' (7#1) [D:/vivado_project/taxi/taxi.srcs/sources_1/new/fare.v:23]
+INFO: [Synth 8-638] synthesizing module 'display' [D:/vivado_project/taxi/taxi.srcs/sources_1/new/display.v:23]
+	Parameter N bound to: 19 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element t1_reg was removed.  [D:/vivado_project/taxi/taxi.srcs/sources_1/new/display.v:51]
+WARNING: [Synth 8-6014] Unused sequential element t2_reg was removed.  [D:/vivado_project/taxi/taxi.srcs/sources_1/new/display.v:64]
+INFO: [Synth 8-256] done synthesizing module 'display' (8#1) [D:/vivado_project/taxi/taxi.srcs/sources_1/new/display.v:23]
+INFO: [Synth 8-256] done synthesizing module 'taxi_top' (9#1) [D:/vivado_project/taxi/taxi.srcs/sources_1/new/taxi_top.v:23]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCINT[15]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCINT[14]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCINT[13]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCINT[12]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCINT[11]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCINT[10]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCINT[9]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCINT[8]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCINT[7]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCINT[6]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCINT[5]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCINT[4]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCINT[3]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCINT[2]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCINT[1]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCINT[0]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCAUX[15]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCAUX[14]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCAUX[13]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCAUX[12]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCAUX[11]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCAUX[10]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCAUX[9]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCAUX[8]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCAUX[7]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCAUX[6]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCAUX[5]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCAUX[4]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCAUX[3]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCAUX[2]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCAUX[1]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCAUX[0]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCBRAM[15]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCBRAM[14]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCBRAM[13]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCBRAM[12]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCBRAM[11]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCBRAM[10]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCBRAM[9]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCBRAM[8]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCBRAM[7]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCBRAM[6]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCBRAM[5]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCBRAM[4]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCBRAM[3]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCBRAM[2]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCBRAM[1]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_VCCBRAM[0]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX0[15]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX0[14]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX0[13]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX0[12]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX0[11]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX0[10]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX0[9]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX0[8]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX0[7]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX0[6]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX0[5]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX0[4]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX0[3]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX0[2]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX0[1]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX0[0]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX2[15]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX2[14]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX2[13]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX2[12]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX2[11]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX2[10]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX2[9]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX2[8]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX2[7]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX2[6]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX2[5]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX2[4]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX2[3]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX2[2]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX2[1]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX2[0]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX3[15]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX3[14]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX3[13]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX3[12]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX3[11]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX3[10]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX3[9]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX3[8]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX3[7]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX3[6]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX3[5]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX3[4]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX3[3]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX3[2]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX3[1]
+WARNING: [Synth 8-3331] design ug480 has unconnected port MEASURED_AUX3[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 370.156 ; gain = 131.172
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u_xadc:VP to constant 0 [D:/vivado_project/taxi/taxi.srcs/sources_1/new/speed_collector.v:43]
+WARNING: [Synth 8-3295] tying undriven pin u_xadc:VN to constant 0 [D:/vivado_project/taxi/taxi.srcs/sources_1/new/speed_collector.v:43]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 370.156 ; gain = 131.172
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/vivado_project/taxi/taxi.runs/synth_1/.Xil/Vivado-13272-LAPTOP-JAN9HU1P/dcp3/clk_wiz_0_in_context.xdc] for cell 'sc/u_clk'
+Finished Parsing XDC File [D:/vivado_project/taxi/taxi.runs/synth_1/.Xil/Vivado-13272-LAPTOP-JAN9HU1P/dcp3/clk_wiz_0_in_context.xdc] for cell 'sc/u_clk'
+Parsing XDC File [D:/vivado_project/taxi/taxi.srcs/constrs_1/new/taxi_top.xdc]
+Finished Parsing XDC File [D:/vivado_project/taxi/taxi.srcs/constrs_1/new/taxi_top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/vivado_project/taxi/taxi.srcs/constrs_1/new/taxi_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/taxi_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/taxi_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 694.262 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 694.262 ; gain = 455.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 694.262 ; gain = 455.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk100. (constraint file  D:/vivado_project/taxi/taxi.runs/synth_1/.Xil/Vivado-13272-LAPTOP-JAN9HU1P/dcp3/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk100. (constraint file  D:/vivado_project/taxi/taxi.runs/synth_1/.Xil/Vivado-13272-LAPTOP-JAN9HU1P/dcp3/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for sc/u_clk. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 694.262 ; gain = 455.277
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ug480'
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/cooper/Desktop/fpga/ug480_7Series_XADC/XADC_lab/lab_xadc.srcs/sources_1/imports/file_xadc/ug480.v:55]
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "miles_km" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "miles_hm" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element miles_dec_reg was removed.  [D:/vivado_project/taxi/taxi.srcs/sources_1/new/mile_integral.v:49]
+WARNING: [Synth 8-6014] Unused sequential element miles_km_reg was removed.  [D:/vivado_project/taxi/taxi.srcs/sources_1/new/mile_integral.v:49]
+WARNING: [Synth 8-6014] Unused sequential element fre_div_reg was removed.  [D:/vivado_project/taxi/taxi.srcs/sources_1/new/display.v:76]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/cooper/Desktop/fpga/ug480_7Series_XADC/XADC_lab/lab_xadc.srcs/sources_1/imports/file_xadc/ug480.v:55]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/cooper/Desktop/fpga/ug480_7Series_XADC/XADC_lab/lab_xadc.srcs/sources_1/imports/file_xadc/ug480.v:55]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               init_read |                              000 |                         00000000
+           read_waitdrdy |                              001 |                         00000001
+          write_waitdrdy |                              010 |                         00000011
+              read_reg00 |                              011 |                         00000100
+          reg00_waitdrdy |                              100 |                         00000101
+              read_reg11 |                              101 |                         00001110
+          reg11_waitdrdy |                              110 |                         00001111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ug480'
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/Users/cooper/Desktop/fpga/ug480_7Series_XADC/XADC_lab/lab_xadc.srcs/sources_1/imports/file_xadc/ug480.v:55]
+WARNING: [Synth 8-327] inferring latch for variable 'digs_m_reg' [D:/vivado_project/taxi/taxi.srcs/sources_1/new/display.v:130]
+WARNING: [Synth 8-327] inferring latch for variable 'digs_f_reg' [D:/vivado_project/taxi/taxi.srcs/sources_1/new/display.v:147]
+WARNING: [Synth 8-327] inferring latch for variable 'dp_reg' [D:/vivado_project/taxi/taxi.srcs/sources_1/new/display.v:90]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 694.262 ; gain = 455.277
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 3     
+	               10 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Multipliers : 
+	                 4x32  Multipliers := 2     
+	                 4x29  Multipliers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  12 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ug480 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   7 Input      7 Bit        Muxes := 1     
+	  12 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 7     
+Module speed_collector 
+Detailed RTL Component Info : 
++---Multipliers : 
+	                 4x32  Multipliers := 2     
+	                 4x29  Multipliers := 1     
+Module mile_integral 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module fare 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+Module display 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element sc/u_xadc/MEASURED_TEMP_reg was removed.  [C:/Users/cooper/Desktop/fpga/ug480_7Series_XADC/XADC_lab/lab_xadc.srcs/sources_1/imports/file_xadc/ug480.v:96]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/vivado_project/taxi/taxi.srcs/sources_1/new/mile_integral.v:75]
+INFO: [Synth 8-5546] ROM "mi/miles_km" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [D:/vivado_project/taxi/taxi.srcs/sources_1/new/speed_collector.v:73]
+WARNING: [Synth 8-6014] Unused sequential element mi/miles_dec_reg was removed.  [D:/vivado_project/taxi/taxi.srcs/sources_1/new/mile_integral.v:49]
+WARNING: [Synth 8-6014] Unused sequential element mi/miles_km_reg was removed.  [D:/vivado_project/taxi/taxi.srcs/sources_1/new/mile_integral.v:49]
+WARNING: [Synth 8-6014] Unused sequential element dis/fre_div_reg was removed.  [D:/vivado_project/taxi/taxi.srcs/sources_1/new/display.v:76]
+DSP Report: Generating DSP sc/decimal33, operation Mode is: A2*(B:0x64).
+DSP Report: register A is absorbed into DSP sc/decimal33.
+DSP Report: operator sc/decimal33 is absorbed into DSP sc/decimal33.
+DSP Report: Generating DSP sc/decimal31, operation Mode is: PCIN+(A:0x0):B.
+DSP Report: operator sc/decimal31 is absorbed into DSP sc/decimal31.
+DSP Report: Generating DSP sc/decimal31, operation Mode is: PCIN-A:B.
+DSP Report: operator sc/decimal31 is absorbed into DSP sc/decimal31.
+INFO: [Synth 8-3886] merging instance 'sc/u_xadc/daddr_reg[0]' (FDE) to 'sc/u_xadc/daddr_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sc/u_xadc/daddr_reg[1]' (FDE) to 'sc/u_xadc/daddr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sc/u_xadc/daddr_reg[2]' (FDE) to 'sc/u_xadc/daddr_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sc/u_xadc/daddr_reg[3]' (FDE) to 'sc/u_xadc/daddr_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sc/u_xadc/daddr_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dis/digs_f_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (dis/digs_f_reg[7]) is unused and will be removed from module taxi_top.
+WARNING: [Synth 8-3332] Sequential element (sc/u_xadc/daddr_reg[5]) is unused and will be removed from module taxi_top.
+WARNING: [Synth 8-3332] Sequential element (sc/u_xadc/MEASURED_AUX1_reg[3]) is unused and will be removed from module taxi_top.
+WARNING: [Synth 8-3332] Sequential element (sc/u_xadc/MEASURED_AUX1_reg[2]) is unused and will be removed from module taxi_top.
+WARNING: [Synth 8-3332] Sequential element (sc/u_xadc/MEASURED_AUX1_reg[1]) is unused and will be removed from module taxi_top.
+WARNING: [Synth 8-3332] Sequential element (sc/u_xadc/MEASURED_AUX1_reg[0]) is unused and will be removed from module taxi_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 694.262 ; gain = 455.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|taxi_top    | A2*(B:0x64)    | 12     | 7      | -      | -      | 19     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|taxi_top    | PCIN+(A:0x0):B | 30     | 16     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|taxi_top    | PCIN-A:B       | 3      | 18     | -      | -      | -1     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'sc/u_clk/clk_out1' to pin 'sc/u_clk/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 744.719 ; gain = 505.734
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 800.438 ; gain = 561.453
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 801.449 ; gain = 562.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 801.449 ; gain = 562.465
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 801.449 ; gain = 562.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 801.449 ; gain = 562.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 801.449 ; gain = 562.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 801.449 ; gain = 562.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 801.449 ; gain = 562.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |BUFG      |     1|
+|3     |CARRY4    |    65|
+|4     |DSP48E1   |     1|
+|5     |DSP48E1_1 |     2|
+|6     |LUT1      |    67|
+|7     |LUT2      |   126|
+|8     |LUT3      |    46|
+|9     |LUT4      |    32|
+|10    |LUT5      |    46|
+|11    |LUT6      |   101|
+|12    |XADC      |     1|
+|13    |FDCE      |    79|
+|14    |FDRE      |    35|
+|15    |LD        |    16|
+|16    |IBUF      |     3|
+|17    |OBUF      |    24|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------+----------------+------+
+|      |Instance   |Module          |Cells |
++------+-----------+----------------+------+
+|1     |top        |                |   646|
+|2     |  dis      |display         |   152|
+|3     |  f        |fare            |    72|
+|4     |  mi       |mile_integral   |   243|
+|5     |  sc       |speed_collector |   146|
+|6     |    u_xadc |ug480           |    60|
++------+-----------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 801.449 ; gain = 562.465
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 801.449 ; gain = 238.359
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 801.449 ; gain = 562.465
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 88 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 9 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  LD => LDCE: 7 instances
+  LD => LDCE (inverted pins: G): 9 instances
+
+50 Infos, 128 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 801.449 ; gain = 568.422
+INFO: [Common 17-1381] The checkpoint 'D:/vivado_project/taxi/taxi.runs/synth_1/taxi_top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 801.449 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 19 09:46:57 2018...
