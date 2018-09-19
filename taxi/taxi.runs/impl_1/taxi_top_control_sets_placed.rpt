@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Wed Sep 19 11:14:32 2018
+| Date         : Wed Sep 19 11:57:47 2018
 | Host         : LAPTOP-JAN9HU1P running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file taxi_top_control_sets_placed.rpt
 | Design       : taxi_top
@@ -33,32 +33,32 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              18 |            7 |
-| No           | No                    | Yes                    |              59 |           16 |
-| No           | Yes                   | No                     |               7 |            4 |
-| Yes          | No                    | No                     |              16 |            5 |
-| Yes          | No                    | Yes                    |              20 |            9 |
-| Yes          | Yes                   | No                     |              10 |            2 |
+| No           | No                    | No                     |              18 |            8 |
+| No           | No                    | Yes                    |              59 |           18 |
+| No           | Yes                   | No                     |               7 |            3 |
+| Yes          | No                    | No                     |              12 |            4 |
+| Yes          | No                    | Yes                    |              20 |            8 |
+| Yes          | Yes                   | No                     |              14 |            3 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 3. Detailed Control Set Information
 -----------------------------------
 
-+----------------------+-----------------------------+----------------------+------------------+----------------+
-|     Clock Signal     |        Enable Signal        |   Set/Reset Signal   | Slice Load Count | Bel Load Count |
-+----------------------+-----------------------------+----------------------+------------------+----------------+
-|  sc/u_xadc/dclk_bufg |                             |                      |                1 |              2 |
-|  clk100_IBUF_BUFG    | mi/miles_hm[3]_i_1_n_0      |                      |                1 |              4 |
-|  sc/u_xadc/dclk_bufg |                             | mi/miles_km_reg[0]_0 |                4 |              7 |
-|  dis/p_0_in[2]       |                             |                      |                3 |              7 |
-| ~dis/p_0_in[2]       |                             |                      |                3 |              9 |
-|  clk100_IBUF_BUFG    | mi/miles_m_reg[9]_0         | mi/miles_km_reg[0]_0 |                5 |             10 |
-|  clk100_IBUF_BUFG    | mi/miles_km[9]_i_1_n_0      | mi/miles_km_reg[0]_0 |                4 |             10 |
-|  sc/u_xadc/dclk_bufg | sc/u_xadc/di_drp[9]_i_1_n_0 | mi/miles_km_reg[0]_0 |                2 |             10 |
-|  sc/u_xadc/dclk_bufg | sc/u_xadc/E[0]              |                      |                4 |             12 |
-|  clk100_IBUF_BUFG    |                             | mi/miles_km_reg[0]_0 |               16 |             59 |
-+----------------------+-----------------------------+----------------------+------------------+----------------+
++----------------------+-----------------------------+------------------------+------------------+----------------+
+|     Clock Signal     |        Enable Signal        |    Set/Reset Signal    | Slice Load Count | Bel Load Count |
++----------------------+-----------------------------+------------------------+------------------+----------------+
+|  sc/u_xadc/dclk_bufg |                             |                        |                1 |              2 |
+|  clk100_IBUF_BUFG    | mi/miles_hm[3]_i_2_n_0      | mi/miles_hm[3]_i_1_n_0 |                1 |              4 |
+|  sc/u_xadc/dclk_bufg |                             | mi/miles_km_reg[0]_0   |                3 |              7 |
+|  dis/p_0_in[2]       |                             |                        |                3 |              7 |
+| ~dis/p_0_in[2]       |                             |                        |                4 |              9 |
+|  clk100_IBUF_BUFG    | mi/miles_m[9]_i_1_n_0       | mi/miles_km_reg[0]_0   |                5 |             10 |
+|  clk100_IBUF_BUFG    | mi/miles_km[9]_i_1_n_0      | mi/miles_km_reg[0]_0   |                3 |             10 |
+|  sc/u_xadc/dclk_bufg | sc/u_xadc/di_drp[9]_i_1_n_0 | mi/miles_km_reg[0]_0   |                2 |             10 |
+|  sc/u_xadc/dclk_bufg | sc/u_xadc/E[0]              |                        |                4 |             12 |
+|  clk100_IBUF_BUFG    |                             | mi/miles_km_reg[0]_0   |               18 |             59 |
++----------------------+-----------------------------+------------------------+------------------+----------------+
 
 
 +--------+-----------------------+

@@ -50,27 +50,28 @@ module mile_integral(
             else if(miles_dec >= meter_raw_ratio)
                     begin
                         
-                        miles_dec <= 0;
-                        
                         if(miles_m == 999)
                             begin
                                 // !!!!!!!!!!!! to do : add km top value
                                 miles_km <= miles_km + 1;
                                 miles_m <= 0;
+                                miles_hm <= 0;
                             end
                         else 
-                            if(miles_m%100 == 0) 
+                            if((miles_m+1)%100 == 0) 
                             begin
-                                    if(miles_hm == 9)
-                                        miles_hm <= 0;
-                                    else
-                                        miles_hm <= miles_hm + 1;
+                                    //if(miles_hm == 9)
+                                    //    miles_hm <= 0;
+                                    //else
+                                    miles_hm <= miles_hm + 1;
                                     miles_m <= miles_m + 1;
                             end
                             else 
                                 miles_m <= miles_m + 1;
                                 
-                        miles_dec <= miles_dec + speed;
+                        miles_dec <= miles_dec + speed - meter_raw_ratio;
+                        //miles_dec <= 0;
+                        //miles_dec <= miles_dec + speed;
                     end
                 else
                     begin
