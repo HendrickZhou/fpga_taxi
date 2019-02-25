@@ -11,5 +11,5 @@ Calculate the integral of speed, and regulate the actual output so it correspond
 There is a convert formula though. I define the max value of potentiometer as max speed of 250 km/h (or maybe not, but pretty close).
 ### 3.fare calculator
 Pretty simple piecewise function
-### 3.display system
+### 4.display system
 display the result of our real speed(Or probably the milage, see more on the code) and fare using on-board LED.
