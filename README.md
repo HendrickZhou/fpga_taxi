@@ -1,6 +1,6 @@
 # fpga_taxi
 
-![close look at my fpga](/img_4720.jpg)
+![close look at my fpga](/IMG_4720.jpg)
 
 This is the little project using FPGA to design a taximeter.
 ## develop board
