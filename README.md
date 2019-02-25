@@ -13,3 +13,7 @@ There is a convert formula though. I define the max value of potentiometer as ma
 Pretty simple piecewise function
 ### 4.display system
 display the result of our real speed(Or probably the milage, see more on the code) and fare using on-board LED.
+
+## Implementation files
+Core implementation codes are here: fpga_taxi/taxi/taxi.srcs/sources_1/new/*.v .
+You can actually ignore everything else but the code in this directory.
